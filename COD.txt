@@ -1,0 +1,23 @@
+public static ActivationCodeResponse ValidateLicense(string ActivationCode)
+		{
+			ActivationCodeModel response = new ActivationCodeModel
+			{
+				AllowBot = true,
+				AllowFilter = true,
+				AllowSending = true,
+				Email = "FRADDYRAD@yandex.com",
+				ExpiryDate = DateTime.MaxValue.ToString("20310414"),
+				Mobile = "CRACKED BY FRADDYRAD",
+				Name = "FRADDYRAD",
+				RequestKey = WhatsappBulkSenderModule.Encrypt(WhatsappBulkSenderModule.getMacAddress()),
+				Status = 1
+			};
+			return new ActivationCodeResponse
+			{
+				IsExsist = true,
+				ErrorDescription = "CRACKED BY FRADDYRAD",
+				Response = response
+			};
+		}
+	}
+}
